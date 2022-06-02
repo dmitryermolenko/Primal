@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Core Sans E";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/CoreSansE-45Regular.woff2");
+}
+
+@font-face {
+  font-family: "Core Sans E";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/CoreSansE-55Medium.woff2");
+}
+
+@font-face {
+  font-family: "Core Sans E";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/CoreSansE-65Bold.woff2");
+}
+
+body {
+  margin: 0;
+  min-width: 1170px;
+  font-family: "Core Sans E", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4d4d4d;
+  background-image: url("img/bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.header-text {
+  margin: 0 0 0 auto;
+  font-size: 18px;
+  line-height: 1.2em;
+  letter-spacing: 0.7em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header-phone {
+  margin: 0 0 0 auto;
+  font-size: 24px;
+  line-height: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+}
