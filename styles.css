@@ -200,6 +200,7 @@ body {
 
 .summary {
   padding-top: 145px;
+  padding-bottom: 85px;
 }
 
 .section-title {
@@ -285,3 +286,117 @@ body {
 .summary-item-description {
   margin: 0;
 }
+
+/* Блок с преимуществами */
+
+.features {
+  padding-top: 200px;
+  padding-bottom: 125px;
+  background-image: url("img/bg-features.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.features-wrapper {
+  display: flex;
+}
+
+.included-features-wrapper {
+  margin-bottom: 105px;
+  background-image: url("img/features-border.png"), url("img/bg-included-features.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.excluded-features-wrapper {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-image: url("img/bg-excluded-features.png");
+  background-repeat: no-repeat;
+}
+
+.features-title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.included-features-title {
+  width: 295px;
+  padding: 120px 70px 135px 75px;
+}
+
+.excluded-features-title {
+  width: 175px;
+  padding: 0 90px 0 160px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.included-features-list {
+  counter-reset: item;
+  width: 720px;
+  padding: 135px 0 0 65px;
+}
+
+.excluded-features-list {
+  width: 715px;
+}
+
+.features-item {
+  position: relative;
+  width: 220px;
+  margin-right: 90px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.included-features-item:last-child {
+  width: 290px;
+}
+
+.included-features-item::before {
+  position: absolute;
+  counter-increment: item;
+  content: counter(item, decimal-leading-zero);
+  top: -50px;
+  left: 0;
+  opacity: 0.14;
+  font-family: "Besom", "Arial", sans-serif;
+  font-size: 72px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.excluded-features-item {
+  width: 350px;
+}
+
+.features-item-title {
+  margin: 0 0 25px 0;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.features-item-description {
+  margin: 0;
+  color: #ffffff;
+}
+
